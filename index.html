@@ -1,9 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <h1>halo guyz</h1>
-  </head>
-  <body>
-    
-  </body>
+    <head>
+        <title>Learn HTML forms</title>
+    </head>
+    <body>
+        <h1>Learn HTML forms</h1>
+
+        <form action="savedata.php" method="post"> 
+            <!--name-->
+                <label for="fname">First Name  : </label> <br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name   : </label> <br>
+                <input type="text" id="lname" name="lname"><br>
+            <!--Password-->
+                <p>Password: </p>
+                <input type="Password" name="password">
+            <!--Birthday-->
+                <p>Birthday: </p>
+                <input type="date" name="birthday"
+            <!--radio-->
+            <p>Status: </p>
+                <input type="radio" id="married" name="Status" value="married">
+                <label for="married">Married</label>
+                <input type="radio" id="single" name="Status" value="single">
+                <label for="single">Single</label>
+            <!--Checkbox-->
+            <p>Hobbies</p>
+                <input type="checkbox" id="Basketball" Value="Basketball"=>
+                <label for="Basketball">Basketball</label><br>
+                <input type="checkbox" id="Swimming" Value="Swimming">
+                <label for="Swimming">Swimming</label><br>
+                <input type="checkbox" id="Watching" Value="Watching">
+                <label for="Watching">Watching</label><br>
+                <input type="checkbox" id="Reading" Value="Reading">
+                <label for="Reading">Reading</label><br>
+            <!--itbrand-->
+            <label for=":itbrand">Choose your favorite IT Brand: </label>
+            <select id="itbrand" name="itbrand">
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="hp">HP</option>
+            </select>
+            <!--Comment-->
+            <p>Please write your comment below: </p>
+            <textarea name="comment" rows="10"></textarea><br>
+            <input type="submit" value="Save"> 
+
+        </form>
+    </body>
 </html>
