@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  height: 220vh;
+  margin-top: 65px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  float: left;
+  background-color: #000000;
+  height: 65px;
+  padding: 0px 120px;
+}
+
+nav .navlogo {
+  width: 200px;
+  float: left;
+  margin-right: 200px;
+}
+nav .logo_asus {
+  width: 80px;
+  margin-top: 28px;
+  margin-left: 180px;
+}
+nav a {
+  text-decoration: none;
+}
+nav a .garis_lurus {
+  background-color: grey;
+  height: 30px;
+  width: 1px;
+  position: absolute;
+  right: 240px;
+  top: 20px;
+}
+
+nav ul {
+  float: left;
+  overflow: hidden;
+  padding-top: 25px;
+}
+
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  /* margin-top: 20px; */
+  text-decoration: none;
+  padding: 0 5px;
+  color: white;
+  text-align: center;
+}
+
+.navbar_2 {
+  background-color: red;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.clear {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.background {
+  width: 100%;
+  height: 550px;
+  display: inline-block;
+  background-size: cover;
+  background-image: url(img/imageslide2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  20% {
+    background-image: url(img/imageslide1.webp);
+  }
+  50% {
+    background-image: url(img/imageslide2.webp);
+  }
+  70% {
+    background-image: url(img/imageslide3.webp);
+  }
+  90% {
+    background-image: url(img/imageslide4.webp);
+  }
+  100% {
+    background-image: url(img/imageslide1.webp);
+  }
+}
+.produk {
+  margin-top: 40px;
+}
+.produk h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+}
+
+div.card_produk {
+  margin: 5px;
+  float: left;
+  width: 250px;
+}
+
+div.card_produk:hover {
+  color: red;
+}
+
+div.card_produk img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.card {
+  margin: 20px 20px 20px 50px;
+}
+
+.recent_release h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  padding-top: 50px;
+}
+
+.recent_release {
+  background-image: url(img/recent_release.jpg);
+  width: 100%;
+  height: 80vh;
+}
+.cari {
+  color: white;
+  font-weight: 100;
+  position: absolute;
+  right: 210px;
+  top: 25px;
+}
+
+div.card_release {
+  margin: 5px;
+  float: left;
+  width: 600px;
+  height: 500px;
+
+  /* background-color: white; */
+}
+
+.release {
+  margin-left: 100px;
+  position: relative;
+}
+
+div.card_release:hover {
+  color: red;
+}
+
+div.card_release a .image_2 {
+  width: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.945)
+    ),
+    url("img/recent_release/1.webp");
+  height: 350px;
+}
+div.card_release a .image_1 {
+  width: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.945)
+    ),
+    url("img/recent_release/2.webp");
+  height: 350px;
+}
+
+div.card_release .desc {
+  /* padding: 15px; */
+  height: 10px;
+  position: absolute;
+  top: 280px;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-image: url(img/footer);
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 80px;
+}
+
+footer ul {
+  float: left;
+  overflow: hidden;
+  padding-top: 25px;
+}
+footer .sosmed {
+  float: right;
+  font-size: 25px;
+}
+
+footer ul li {
+  display: inline;
+}
+footer ul li a {
+  /* margin-top: 20px; */
+  text-decoration: none;
+  padding: 0 5px;
+  color: #bfbfbf;
+  text-align: center;
+}
+footer ul li a:hover {
+  color: red;
+}
+footer li:not(:first-child) {
+  margin-left: 40px;
+}
+
+footer p {
+  margin-top: 20px;
+  color: #bfbfbf;
+}
+
+footer .kebijakan {
+  margin-top: -40px;
+  float: right;
+  color: #bfbfbf;
+  font-size: 13px;
+}
+
+footer .garis {
+  width: 100%;
+  background-color: #bfbfbf;
+  height: 0.2px;
+  margin-top: 15px;
+}
